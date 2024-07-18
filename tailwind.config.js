@@ -19,10 +19,10 @@ export default {
       "Error": "#EF4444",
       "Success": "#10B981"
     },
-    // fontFamily: {
-    //   sans: ['Graphik', 'sans-serif'],
-    //   serif: ['Merriweather', 'serif'],
-    // },
+    fontFamily: {
+      Montserrat: ['Montserrat', 'sans-serif'],
+      SegoeUI: ['Segoe UI', 'sans-serif'], //not availabe in google fonts
+    },
     extend: {},
   },
   plugins: [],
