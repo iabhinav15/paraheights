@@ -1,4 +1,5 @@
 /* This is login page of the app. It contains a form where the user can enter their mobile number to receive an OTP for authentication. */
+import { v4 as uuidv4 } from 'uuid';
 import {useEffect, useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 
@@ -43,7 +44,7 @@ const Login = () => {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            "uuid": "bad7658f-243c-4d46-b697-932c03f4ff80"
+            "uuid": uuidv4()
           },
           body: JSON.stringify({
             mobile: mobileNumber,

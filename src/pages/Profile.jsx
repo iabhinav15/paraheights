@@ -1,5 +1,6 @@
 /* This is profile creation page component. Using name and email user can create their profile. */
 import { useState } from 'react'
+
 import checkMark from '../assets/checkmark.png';
 
 const Profile = () => {

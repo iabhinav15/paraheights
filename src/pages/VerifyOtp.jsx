@@ -1,4 +1,5 @@
 /* This is verifyOtp page component where user enters the otp. */
+import { v4 as uuidv4 } from 'uuid';
 import {useRef, useState, useEffect} from 'react'
 import { useLocation, useNavigate } from 'react-router-dom';
 
@@ -64,7 +65,7 @@ const VerifyOtp = () => {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            "uuid": "bad7658f-243c-4d46-b697-932c03f4ff80"
+            "uuid": uuidv4()
           },
           body: JSON.stringify({
             mobile: mobileNumber,
