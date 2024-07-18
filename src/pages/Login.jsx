@@ -1,6 +1,6 @@
 /* This is login page of the app. It contains a form where the user can enter their mobile number to receive an OTP for authentication. */
 import { v4 as uuidv4 } from 'uuid';
-import {useEffect, useState} from 'react'
+import { useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
@@ -22,6 +22,8 @@ const Login = () => {
     // Check if the value is a number
     if(!/\D/.test(value)) {
       setMobileNumber(value);
+      setError("");
+      setIsError(false);
     }
   }
   
